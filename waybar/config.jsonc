@@ -1,0 +1,128 @@
+{
+    "reload_style_on_change":true,
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 27,
+    "modules-left": ["custom/archicon", "sway/workspaces", "sway/window", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "bluetooth","battery","sway/language","backlight","pulseaudio","pulseaudio#microphone","custom/poweroff" ,"tray"],
+
+    "custom/archicon": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "wofi -I --show drun"
+    },
+
+    "custom/poweroff": {
+        "format":  " ",
+        "tooltip": false,
+        "on-click": "~/.config/wofi/wofi-power.sh"
+    },
+
+    "sway/window": {
+        "format": "{app_id}"
+    },
+
+    "sway/workspaces": {
+        "format":"{index}",
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        } 
+    },
+
+    "sway/language": {
+      "format": "{shortDescription}"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "clock": {
+        //             %I    %p    %a, %b %e
+        "format": "󱑂 {:%I:%M %p}",
+        "format-alt": " {:%a, %b %e}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    },
+
+    "bluetooth": {
+	    "format": " {status}",
+	    "format-disabled": "", // an empty format will hide the module
+	    "format-connected": " {num_connections}",
+	    "tooltip-format": "{device_alias}",
+	    "tooltip-format-connected": " {device_enumerate}",
+	    "tooltip-format-enumerate-connected": "{device_alias}"
+    }
+}

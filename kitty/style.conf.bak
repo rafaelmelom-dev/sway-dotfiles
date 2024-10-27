@@ -1,0 +1,61 @@
+# The basic colors
+foreground              #EEEEEE
+background              #0E0E0E
+selection_foreground    #0E0E0E
+selection_background    #EEEEEE
+
+# Cursor colors
+cursor                  #EEEEEE
+cursor_text_color       #0E0E0E
+
+# URL underline color when hovering with mouse
+url_color               #F5E0DC
+
+# Kitty window border colors
+#active_border_color     #B4BEFE
+#inactive_border_color   #6C7086
+#bell_border_color       #F9E2AF
+
+# OS Window titlebar colors
+wayland_titlebar_color system
+macos_titlebar_color system
+
+# Tab bar color
+active_tab_foreground   #0E0E0E
+active_tab_background   #EEEEEE
+inactive_tab_foreground #EEEEEE
+inactive_tab_background #0E0E0E
+tab_bar_background      #0E0E0E
+# The 16 terminal colors
+
+# black
+color0 #241F31
+color8 #5E5C64
+
+# red
+color1 #C01C28
+color9 #ED333B
+
+# green
+color2  #2EC27E
+color10 #57E389
+
+# yellow
+color3  #F5C211
+color11 #F8E45C
+
+# blue
+color4  #1E78E4
+color12 #51A1FF
+
+# magenta
+color5  #9841BB
+color13 #C061CB
+
+# cyan
+color6  #0AB9DC
+color14 #4FD3FD
+
+# white
+color7  #C0BFBC
+color15 #F6F5F4

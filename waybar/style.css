@@ -1,0 +1,158 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Hack";
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #282828;
+    color: #ebdbb2;
+}
+
+tooltip {
+    background: #282828;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+tooltip label {
+    color: #ebdbb2;
+}
+
+#workspaces button {
+    padding: 1px;
+    margin-right: 2px;
+    border-radius: 2px;
+    color: #ebdbb2;
+}
+
+#workspaces button.active {
+    background: #ebdbb2;
+    color: #282828;
+}
+
+#workspaces button.focused {
+    color: #282828;
+    background: #ebdbb2;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent {
+    color: #282828;
+    background: #8ec07c;
+    border-radius: 4px;
+}
+
+#workspaces button:hover {
+    background: #8ec07c;
+    color: #282828;
+    border-radius: 4px;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#pulseaudio.microphone,
+#network,
+#bluetooth,
+#workspaces,
+#tray,
+#backlight,
+#language,
+#custom-archicon,
+#custom-poweroff {
+
+    background: transparent;
+    padding: 0px 10px;
+    margin: 0px;
+    border: 0px solid transparent;
+}
+
+#tray {
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#custom-archicon {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+#custom-archicon:hover {
+    color: #83a598;
+}
+
+#workspaces {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 0px 6px 6px 0px;
+    /*margin-left: 60px;*/
+    /*margin-right: 60px;*/
+}
+
+#clock {
+    color: #ebdbb2;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 0px 10px 0px 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#network {
+    color: #f9e2af;
+    border-radius: 2px 0px 0px 2px;
+    padding-left: 10px;
+}
+
+#bluetooth {
+    color: #89b4fa;
+}
+
+#pulseaudio {
+    color: #89b4fa;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+}
+
+#custom-poweroff {
+    border-radius: 0px 2px 2px 0px;
+    margin-right: 5px;
+}
+
+#custom-poweroff:hover {
+    color: #fb4934;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#network,
+#bluetooth, 
+#battery, 
+#language,
+#backlight,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-poweroff {
+  background: #ebdbb2;
+  color: #282828;
+}
+
+/*#language {*/
+/*}*/
+/**/
+/*#backlight {*/
+/*}*/

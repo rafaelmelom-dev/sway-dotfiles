@@ -1,0 +1,91 @@
+* {
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(12, 12, 12, 0.9);
+}
+
+button {
+  margin: 10px;
+  border-radius: 6px;
+  border-color: transparent;
+  text-decoration-color: #ebdbb2;
+  color: #ebdbb2;
+  background-color: #282828;
+  border-style: solid;
+  border-width: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  opacity: 0.8;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: #ebdbb2;
+  color: #282828;
+  outline-style: none;
+}
+
+#lock {
+  background-image: url("./icons/lock.svg");
+}
+
+#lock:active, 
+#lock:focus,
+#lock:hover {
+  background-image: url("./icons/lock-dark.svg");
+}
+
+#logout {
+  background-image: url("./icons/logout.svg");
+}
+
+#logout:active, 
+#logout:focus,
+#logout:hover {
+  background-image: url("./icons/logout-dark.svg");
+}
+
+#suspend {
+  background-image: url("./icons/suspend.svg");
+}
+
+#suspend:active, 
+#suspend:focus,
+#suspend:hover {
+  background-image: url("./icons/suspend-dark.svg");
+}
+
+#hibernate {
+  background-image: url("./icons/hibernate.svg");
+}
+
+#hibernate:active, 
+#hibernate:focus,
+#hibernate:hover {
+  background-image: url("./icons/hibernate-dark.svg");
+}
+
+#shutdown {
+  background-image: url("./icons/shutdown.svg");
+}
+
+#shutdown:active, 
+#shutdown:focus,
+#shutdown:hover {
+  background-image: url("./icons/shutdown-dark.svg");
+}
+
+#reboot {
+  background-image: url("./icons/reboot.svg");
+}
+
+#reboot:active, 
+#reboot:focus,
+#reboot:hover {
+  background-image: url("./icons/reboot-dark.svg");
+}
